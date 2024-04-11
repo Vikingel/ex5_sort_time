@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Collections;
+import java.util.Arrays;
 
 public class Main {
 
@@ -18,7 +19,7 @@ public class Main {
             t = a * 3600 + b * 60 + c;
             mas[i] = t;
         }
-        sortArray(mas);
+        sortArraySimple(mas);
         System.out.println("Отсортированные моменты времени:");
         for (int i = 0; i < n; i++) {
             st = mas[i];
@@ -36,5 +37,8 @@ public class Main {
                 }
             }
         }
+    }
+    public static void sortArraySimple(int[] arr) {
+        Arrays.sort(arr);
     }
 }
